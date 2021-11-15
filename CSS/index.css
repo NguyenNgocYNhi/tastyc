@@ -1,0 +1,1345 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a2f338f;
+}
+
+body {
+  background-image: url(../IMG/bg.jpg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: repeat;
+  font-weight: bold;
+}
+
+.background-1 {
+  background-image: url(../IMG/banner-1.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+header {
+  background-attachment: scroll;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 98%;
+  height: 60px;
+  border: 4px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 1%;
+  position: fixed;
+  /* => cho header chạy theo */
+  z-index: 5;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 166, 0);
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: calc(100% - 30px);
+  background-color: rgba(255, 255, 255, 0.185);
+  border: 4px solid rgba(255, 255, 255, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 20px;
+  position: absolute;
+  bottom: -15px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 28px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 640;
+}
+
+header .but {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 20%;
+  transform: translateX(-20px);
+}
+
+header .but .re {
+  height: 40px;
+  padding: 0 10px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: black;
+  transform: translateX(-20px);
+}
+
+header .but button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+header img {
+  height: 24px;
+}
+
+header .but img {
+  height: 20px;
+}
+
+.slide-1 {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 600px;
+  height: 50vh;
+  color: white;
+  background-attachment: fixed;
+}
+
+.slide-1 h6 {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  display: flex;
+  position: relative;
+}
+
+.slide-1 h6::before {
+  content: " ";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: orange;
+  margin-right: 5px;
+  border-radius: 10px;
+  transform: translateY(4px);
+}
+
+.slide-1 h1 {
+  width: 350px;
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+}
+
+.slide-1 p {
+  color: rgba(255, 255, 255, 0.589);
+  width: 300px;
+  font-size: 12px;
+  font-weight: 450;
+  margin: 20px 0;
+}
+
+#but-1 {
+  height: 50px;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+#but-1::after {
+  content: "";
+  display: block;
+  background-color: rgba(255, 255, 255, 0.185);
+  border: 0px solid rgba(255, 255, 255, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 7px;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+}
+
+#but-2 {
+  margin: 0 50px;
+  border: none;
+  background-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: white;
+}
+
+.trans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(-12vh) translateX(100px);
+  width: 200px;
+}
+
+.c img {
+  width: 7px;
+  height: 7px;
+}
+
+.c button {
+  border: none;
+  background-color: transparent;
+  margin: 0 5px;
+}
+
+.arr-left {
+  border: none;
+  background-color: transparent;
+  margin: 0 20px;
+}
+.arr-right {
+  border: none;
+  background-color: transparent;
+}
+
+.arr img {
+  width: 15px;
+  height: 15px;
+}
+
+.intro {
+  position: relative;
+}
+
+.space {
+  width: 95%;
+  background-color: white;
+  position: absolute;
+  right: 2.5%;
+  left: 2.5%;
+  padding: 50px 15px;
+  border-radius: 8px;
+  transform: translateY(-30px);
+  background-attachment: fixed;
+}
+
+.space-1 {
+  margin: 0 100px;
+  width: calc(100% -200px);
+  position: relative;
+}
+
+.space-1::before {
+  content: " ";
+  display: block;
+  width: 80px;
+  background-color: white;
+  height: 80px;
+  position: absolute;
+  right: calc(50% - 40px);
+  left: calc(50% - 40px);
+  border-radius: 1000px;
+  transform: translateY(-90px);
+  background-image: url(../IMG/icon/mouse.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.space::after {
+  content: "";
+  display: block;
+  width: calc(100% - 30px);
+  background-color: rgba(255, 255, 255, 0.185);
+  border: 4px solid rgba(255, 255, 255, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.intro-1 {
+  display: block;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  border-bottom: 6px dotted rgba(0, 0, 0, 0.301);
+  padding: 0 0 30px 0;
+}
+
+.intro-1 .video .v {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.intro-1 .cont {
+  width: 50%;
+  margin: 0 25px;
+}
+
+.intro-1 .video {
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.intro-1 .overlay {
+  background-color: #1a2f338f;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-1 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-1 .video button {
+  border-radius: 1000px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: orange;
+}
+
+.intro .video button img {
+  width: 24px;
+  height: 24px;
+}
+
+.cont .c1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8px;
+  display: flex;
+}
+
+.cont h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 25px;
+}
+
+.intro .cont .c1::before {
+  content: " ";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: orange;
+  margin-right: 5px;
+  border-radius: 10px;
+  transform: translateY(4px);
+}
+
+.cont h3 {
+  width: 400px;
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.cont .rm {
+  text-transform: uppercase;
+  height: 36px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+.cont .rm::after {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.068);
+  border: 0px solid rgba(3, 0, 0, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 5px;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  left: 0;
+}
+
+.cont button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+}
+
+.cont button img {
+  height: 18px;
+}
+
+.intro-2 {
+  border-bottom: 6px dotted rgba(0, 0, 0, 0.301);
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.intro-2 h6 {
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgb(41, 41, 41);
+
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.intro-2 .cont {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.intro-2 .cont img {
+  height: 100px;
+}
+
+.intro-2 p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgb(41, 41, 41);
+}
+
+.intro-2 h3 {
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.intro-2 .cont h5 {
+  font-size: 15px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.intro-2 .cont h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 9px;
+  color: rgb(41, 41, 41);
+}
+
+.intro-2 .cont img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.intro-3 {
+  border-bottom: 6px dotted rgba(0, 0, 0, 0.301);
+}
+
+.intro-3 .intro-3-1 {
+  width: 100%;
+  display: flex;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+}
+
+.intro-3 .cont-1 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.intro-3 img {
+  height: 250px;
+  width: 70%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.intro-3 .cont-1 h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.intro-3 .cont-1 p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgb(173, 173, 173);
+}
+
+.intro-3 .cont-1 h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.intro-3 .cont-1 .c1 {
+  text-transform: uppercase;
+  height: 36px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+.intro-3 .cont-1 .c1::after {
+  content: "";
+  display: block;
+  background-color: rgba(255, 249, 249, 0.233);
+  border: 0px solid rgba(255, 255, 255, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 5px;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  left: 0;
+}
+
+.intro-3 .cont-1 .c2 {
+  margin: 0 50px;
+  border: none;
+  background-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: white;
+}
+
+.intro-3 .cont-2 {
+  width: 20%;
+  text-align: center;
+  margin: 0 5%;
+  transform: translateY(15%);
+}
+
+.intro-3 .cont-2 h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: rgb(75, 75, 75);
+}
+
+.intro-3 .cont-2 h5 {
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.intro-4 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.intro-4 h3 {
+  font-size: 35px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.intro-4 h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: rgb(75, 75, 75);
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  position: absolute;
+  top: 1330px;
+  right: 2.5%;
+  left: 2.5%;
+}
+
+.middle .pic img {
+  height: 400px;
+}
+
+.middle .content h6 {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: white;
+  display: flex;
+}
+
+.middle .content h6::before {
+  content: " ";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: orange;
+  margin-right: 5px;
+  border-radius: 10px;
+  transform: translateY(4px);
+}
+
+.middle .content h3 {
+  width: 350px;
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: white;
+}
+
+.middle .content p {
+  color: rgba(255, 255, 255, 0.589);
+  width: 300px;
+  font-size: 12px;
+  font-weight: 450;
+  margin: 20px 0;
+}
+
+.middle .but {
+  display: flex;
+  text-align: center center;
+}
+
+.middle .content button {
+  text-transform: uppercase;
+  height: 36px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  text-align: center center;
+  margin: 0 10px;
+}
+
+.middle .content button h6 {
+  color: rgb(0, 53, 51);
+  transform: translateY(2px);
+}
+
+.middle button img {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.container .space {
+  width: 95%;
+  position: absolute;
+  top: 1730px;
+  right: 2.5%;
+  left: 2.5%;
+}
+
+.container .space .content {
+  margin: 0 100px;
+  width: calc(100% -200px);
+  position: relative;
+}
+
+.container .part-1 {
+  text-align: center;
+  border-bottom: 5px dotted rgba(0, 0, 0, 0.301);
+  padding-bottom: 50px;
+}
+
+.container .part-1 .cont {
+  display: flex;
+}
+
+.container .part-1 .cont {
+  text-align: left;
+}
+
+.container .part-1 .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .part-1 .card-1 {
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .part-1 .card-2 {
+  width: 30%;
+  margin: 0 5%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .part-1 .card-3 {
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .part-1 h6 {
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-1 h3 {
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+}
+
+.container .part-1 h4 {
+  font-size: 15px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+}
+
+.container .part-1 p {
+  color: rgb(145, 145, 145);
+  font-size: 12px;
+  font-weight: 200;
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-1 .info {
+  border-top: 1px dotted rgb(145, 145, 145);
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container .part-1 .info h6 {
+  transform: translateY(12px);
+  border-radius: 50px;
+  background-color: grey;
+  padding: 4px;
+}
+
+.container .part-1 .face {
+  display: flex;
+  align-items: center;
+}
+
+.container .part-1 .face h6 {
+  transform: translateY(12px);
+  background-color: transparent;
+}
+
+.container .part-1 .face img {
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px 0 0;
+}
+
+.change-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.change-slide .b2 img {
+  height: 5px;
+}
+
+.change-slide .b3 {
+  display: flex;
+  align-items: center;
+}
+
+.change-slide .b3 img {
+  height: 15px;
+}
+
+.change-slide button {
+  height: 40px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+.change-slide .b3 button {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.container .part-2 {
+  text-align: center;
+  border-bottom: 5px dotted rgba(0, 0, 0, 0.301);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.container .part-2 .cont {
+  display: flex;
+}
+
+.container .part-2 .cont {
+  text-align: left;
+}
+
+.container .part-2 .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .part-2 .card-1 {
+  width: 30%;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.container .part-2 .card-2 {
+  width: 30%;
+  margin: 0 5%;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.container .part-2 .card-3 {
+  width: 30%;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.container .part-2 h6 {
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-2 h3 {
+  font-size: 40px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+}
+
+.container .part-2 h4 {
+  font-size: 15px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+}
+
+.container .part-2 p {
+  color: rgb(145, 145, 145);
+  font-size: 12px;
+  font-weight: 200;
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-2 .info {
+  border-top: 1px dotted rgb(145, 145, 145);
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container .part-2 .info h6 {
+  transform: translateY(12px);
+  border-radius: 50px;
+  background-color: grey;
+  padding: 4px;
+}
+
+.container .part-2 .face {
+  display: flex;
+  align-items: center;
+}
+
+.container .part-2 .face h6 {
+  transform: translateY(12px);
+  background-color: transparent;
+}
+
+.container .part-2 .face img {
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px 0 0;
+}
+.container .part-2 .pic {
+  position: relative;
+  height: 200px;
+}
+
+.container .part-2 .pic button {
+  position: absolute;
+  top: 0;
+}
+
+.container .part-2 .card-1 .pic button {
+  background-color: rgb(31, 211, 100);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-2 .card-2 .pic button {
+  background-color: rgb(211, 52, 31);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+}
+.container .part-2 .card-3 .pic button {
+  background-color: rgb(31, 103, 211);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-2 .pic img {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.container .part-2 h4 {
+  padding: 0 20px;
+}
+
+.container .part-2 p {
+  padding: 0 20px;
+}
+
+.container .part-2 .info {
+  padding: 20px;
+}
+
+.container .part-2 .bot {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .part-2 .bot h6 {
+  color: rgb(145, 145, 145);
+  font-size: 10px;
+  font-weight: 200;
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: none;
+  transform: translateY(-3px);
+}
+
+.container .part-2 .bot button {
+  height: 35px;
+  padding: 8px 10px;
+  text-decoration: none;
+  background-color: orange;
+  border: 0px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+.container .part-3 {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.container .part-3 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container .part-3 .cover {
+  border-radius: 10px;
+}
+
+.container .part-3 .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(60px);
+  text-align: center;
+}
+
+.container .part-3 .content h6 {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-3 .content h3 {
+  font-size: 40px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+.container .part-3 .content p {
+  color: rgb(185, 185, 185);
+  font-size: 16px;
+  font-weight: 200;
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container .part-3 .in input {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  width: 200px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: transparent;
+}
+
+.container .part-3 .in button {
+  height: 35px;
+  padding: 0px 15px;
+  text-decoration: none;
+  background-color: orange;
+  border: 0px solid orange;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+}
+
+.container .part-3 .in button::after {
+  content: "";
+  display: block;
+  background-color: rgba(255, 255, 255, 0.185);
+  border: 0px solid rgba(255, 255, 255, 0.041);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 7px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  left: 0;
+}
+
+.end {
+  position: absolute;
+  width: 100%;
+  top: 3600px;
+}
+
+.end .part-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 3px dotted rgba(128, 128, 128, 0.856);
+}
+
+.end .part-1 img {
+  height: 40px;
+}
+
+.end .part-1 .icons img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.end .part-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px dotted rgba(128, 128, 128, 0.856);
+}
+
+.end .part-2 .cont-1 {
+  width: 30%;
+}
+
+.end .part-2 .cont-1 h4 {
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+.end .part-2 .cont-1 p {
+  color: rgb(185, 185, 185);
+  font-size: 12px;
+  font-weight: 200;
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.end .part-2 .cont-2 {
+  width: 30%;
+  margin: 0 5%;
+}
+
+.end .part-2 .cont-2 h4 {
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+.end .part-2 .cont-2 .c1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end .part-2 .cont-2 .c2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end .part-2 .cont-2 h6 {
+  color: rgb(185, 185, 185);
+  font-size: 10px;
+  font-weight: 500;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.end .part-2 .cont-2 .c3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end .part-2 .cont-3 {
+  width: 30%;
+  position: relative;
+}
+
+.end .part-2 .cont-3 .pic {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.end .part-2 .cont-3 img {
+  width: 24%;
+  border-radius: 3px;
+}
+
+.end .part-2 .cont-3 .but {
+  display: flex;
+}
+
+.end .part-2 .cont-3 .but button {
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+}
+
+.end .part-2 .cont-3 .sm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end .part-2 .cont-3 .but img {
+  height: 15px;
+  width: 15px;
+}
+
+.end .part-2 .cont-3 h4 {
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+.end .part-2 a {
+  text-decoration: none;
+  color: orange;
+  font-size: 10px;
+  font-weight: 800;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.end .part-3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.end .part-3 h6 {
+  color: rgb(185, 185, 185);
+  font-size: 12px;
+  font-weight: 500;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.end .part-3 a {
+  text-decoration: none;
+  color: orange;
+  font-size: 12px;
+  font-weight: 800;
+
+  font-family: "Josefin Sans", sans-serif;
+}
