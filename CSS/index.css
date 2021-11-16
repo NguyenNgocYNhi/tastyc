@@ -261,19 +261,23 @@ header .but img {
   position: absolute;
   right: 2.5%;
   left: 2.5%;
-  padding: 50px 15px;
+
   border-radius: 8px;
   transform: translateY(-30px);
   background-attachment: fixed;
 }
 
-.space-1 {
+#hic {
   margin: 0 100px;
+  padding: 50px 0;
   width: calc(100% -200px);
   position: relative;
 }
 
-.space-1::before {
+#ha {
+  padding: 50px 0;
+}
+#hic::before {
   content: " ";
   display: block;
   width: 80px;
